@@ -919,10 +919,7 @@ p {
     left: -50%;
     width: 200%;
     height: 200%;
-    /* background: linear-gradient(45deg,
-            rgba(124, 143, 247, 0.1) 0%,
-            rgba(154, 179, 245, 0.1) 50%,
-            rgba(255, 255, 255, 0.1) 100%); */
+   
     background: #E7F5FF;
     animation: rotate 20s linear infinite;
     z-index: -1;
@@ -1098,12 +1095,7 @@ footer {
     margin-top: auto;
     z-index: 1000;
 
-    /* box-shadow: 
-          0 -2px 4px -1px rgba(0, 0, 0, 0.06),
-          0 -4px 10px -2px rgba(0, 0, 0, 0.08);
-       */
-
-    /* box-shadow: 0 -6px 12px -3px rgba(0, 0, 0, 0.15); */
+   
 
 
     box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -1111,9 +1103,6 @@ footer {
 
 }
 
-/* .footer-column{
-    text-align: center;
-} */
 
 
 .footer-grid {
@@ -1241,8 +1230,6 @@ footer {
 /* =======================================FOOTER Responsive Design */
 @media (max-width: 768px) {
     .footer-grid {
-
-
 
         h3,
         ul {
