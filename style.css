@@ -1023,6 +1023,7 @@ button.submit-btn::before {
     transition: 0.5s;
 }
 
+
 button.submit-btn:hover::before {
     left: 100%;
 }
@@ -1039,7 +1040,7 @@ button.submit-btn:hover {
     position: relative;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* border: 2px solid rgba(255, 255, 255, 0.5); */
 }
 
 .map-container iframe {
@@ -1303,6 +1304,10 @@ footer {
     }
 }
 
+
+
+
+
 /* count */
 
 
@@ -1347,6 +1352,12 @@ footer {
     background: rgba(74, 144, 226, 0.1);
     padding: 15px;
     border-radius: 50%;
+}
+
+.counter-number::before {
+    content: '+';
+    margin-right: 5px;
+    color: #4a90e2;
 }
 
 .counter-number {

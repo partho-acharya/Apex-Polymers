@@ -284,42 +284,39 @@ document.addEventListener('mousemove', (e) => {
     
 
 
-        // count
-
-        
-        // Previous counter animation script with added features
+        // count=========================================
         function animateCounter(counterElement) {
             const target = parseInt(counterElement.dataset.target);
             const duration = 2000;
             const startTime = Date.now();
             const startNumber = 0;
-
+        
             const updateCounter = () => {
                 const currentTime = Date.now();
                 const elapsed = currentTime - startTime;
                 const progress = Math.min(elapsed / duration, 1);
                 
                 const currentNumber = Math.floor(progress * target);
-                counterElement.textContent = currentNumber.toLocaleString();
+                counterElement.textContent = `${currentNumber.toLocaleString()}`;
                 
                 if (progress < 1) {
                     requestAnimationFrame(updateCounter);
                 } else {
-                    counterElement.textContent = target.toLocaleString();
+                    counterElement.textContent = `${target.toLocaleString()}`;
                     counterElement.style.animation = 'glow 1.5s ease-out';
                 }
             };
-
+        
             requestAnimationFrame(updateCounter);
         }
-
+        
         function initializeCounters() {
             const counters = document.querySelectorAll('.counter-number');
             counters.forEach(counter => {
-                counter.textContent = '0';
+                counter.textContent = '0'; // Initialize with +0
                 animateCounter(counter);
             });
         }
-
+        
         window.addEventListener('load', initializeCounters);
-   
+        // count=========================================
